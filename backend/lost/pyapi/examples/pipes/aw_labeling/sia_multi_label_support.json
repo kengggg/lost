@@ -29,7 +29,7 @@
               "point": false,
               "line": false,
               "polygon": false,
-              "bbox": false,
+              "bbox": true,
               "junk": true
           },
           "annos":{
