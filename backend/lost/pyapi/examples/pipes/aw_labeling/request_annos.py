@@ -47,7 +47,7 @@ class RequestAnnos(script.Script):
                 lbls.append(random.sample(possible_labels, 2))
             # request annotation only for 'jpg','jpeg', 'bmp' and 'png' image type
             imgfile_filter = ['.jpg','.jpeg','.bmp','.png'] 
-            for dirpath, dirnames, filenames in sorted(os.walk(media_path)):
+            for dirpath, dirnames, filenames in os.walk(media_path):
                 for file in filenames:
                     if any(file.endswith(filter) for filter in imgfile_filter):
                         img_path = os.path.join(media_path, dirpath, file)
